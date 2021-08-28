@@ -1,0 +1,4 @@
+docker-compose up -d
+docker exec -it classsed-docker-tutorial_server_1 npm run migrate  
+docker exec -it classsed-docker-tutorial_server_1 npm run seed 
+docker exec -it classsed-docker-tutorial_db_1 psql -U postgres -d postgres
